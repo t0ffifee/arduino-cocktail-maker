@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(36, 35, 35) !important;
+}
+
+h1 {
+    color: rgb(192, 191, 188) !important;
+    font-family: 'Open Sans', sans-serif !important;
+    text-align: center;
+    font-weight: bold !important;
+    margin: 0px 0px 10px 0px !important;
+}
+
+h5 {
+    color: rgb(192, 191, 188) !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
+    font-style: italic !important;
+    text-align: center;
+    margin: 0px 0px 25px 0px !important;
+}
+
+h6 {
+    color: rgb(192, 191, 188) !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
+    margin: 0px 0px 5px 0px !important;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+label{
+    font-family: 'Open-Sans', sans-serif !important;
+    color: rgb(192, 191, 188);
+    width: 30%;
+}
+
+p{
+    color: rgb(192, 191, 188) !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+}
+
+.custom-warning{
+    color: white !important;
+}
+
+.drink-title{
+    color: rgb(192, 191, 188) !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500 !important;
+    text-align: left;
+    margin: 0px 0px 4% 0px !important;
+}
+
+.subtitle{
+    padding: 0px 10px 0px 10px !important;
+}
+
+.ingredients{
+    color: rgb(192, 191, 188) !important;
+    font-size: 14px !important;
+}
+
+.myp{
+    padding: 0px 10px 0px 10px !important;
+}
+
+.btn{
+    background-color: rgb(218, 169, 95) !important;
+    border-color: rgb(218, 169, 95) !important;
+    color: rgb(37, 37, 37) !important;
+    font-family: 'Open-Sans', sans-serif !important;
+}
+
+.navbar{
+    background-color: rgb(218, 169, 95) !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(36,35,35, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(36,35,35) !important;
+} 
+
+.navbar-brand{
+    color: rgb(36, 35, 35) !important;
+}
+
+.nav-link{
+    color: rgb(36, 35, 35) !important;
+}
+
+.inputs{
+    padding: 0% 0% 5% 0%;
+}
+
+marginLeft {
+    margin-left: 25px;
+}

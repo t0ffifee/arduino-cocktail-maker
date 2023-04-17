@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Pina Colada{% endblock %}
+
+{% block content %}
+    <body>
+    <h1> Pina Colada </h1>
+    <p> There are multiple stories about when the pina colada was first discovered. Stories say that in the 19th century a Puerto Rican pirate called Roberto Cofresi first made it. He made the drink to boost the morale of his crew. Another story was that the recipe was included in the 'Savoy Cocktail Book' by Harry Craddock published in 1930. The recipe also included white rum, cocoanut milk and crushed pineapple. in 1978, Puerto Rico proclaimed the cocktails its official drink</p>
+    <p> The drinks is made with the following ingredients: rum, cream of coconut or coconut milk, and pineapple juice.
+    <form method="post" action="/cocktail2">
+        <input class="btn btn-primary btn-lg" type="submit" value="Make Pina Colada!" name="sendPOST2"/>
+    </form>
+    </body>
+{% endblock %}

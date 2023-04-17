@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Create your drink using the buttons!{% endblock %}
+
+{% block content %}
+    <body>
+    <h1> Create your cocktail</h1>
+    <h5> Give your custom drink a name and enter the quantity of each drink down below</h5>
+    <p> After constructing your drink, you can make your drink using the 'make' button. You are also able to save your drink using the 'save' button. If you want to see the custom drinks you've saved in the past, press the 'Saved drinks' button! </p>
+    <p style="font-style:italic"> WARNING: A cocktail contains a maximum of 250 mL, don't exceed this limit or an error message will appear. </p>
+    <form action="{{ url_for("manually")}}" method="post">
+        <label for="nameofdrink">Name:</label>
+            <input type="text" id="nameofdrink" name="name" placeholder="Enter a name"><br>
+            <label for="firstdrink">Red Dragon:</label>
+            <input type="text" id="firstdrink" name="rd" placeholder="Enter quantity (in mL)"><br>
+            <label for="seconddrink">Blue Lagoon:</label>
+            <input type="text" id="seconddrink" name="bl" placeholder="Enter quantity (in mL)"><br>
+            <label for="thirddrink">Leaf Green:</label>
+            <input type="text" id="thirddrink" name="lg" placeholder="Enter quantity (in mL)"><br>
+            <label for="fourthdrink">Pink Lady:</label>
+            <input type="text" id="fourthdrink" name="dm" placeholder="Enter quantity (in mL)"><br>    
+            <input class="btn btn-primary btn-lg" type="submit" value="Make" name="make"/>
+            <input class="btn btn-primary btn-lg" type="submit" value="Save" name="save"/>
+            <a class="btn btn-primary btn-lg" href="{{url_for('savedDrinks')}}" role="button">Saved drinks</a>
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <li class="ingredients">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    </body>
+{% endblock %}

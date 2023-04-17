@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Cocktail Creator{% endblock %}
+
+{% block content %}
+    <h1> Cocktail Creator</h1>
+    <h5 class="subtitle"> we do the heavy lifting, you do the drinking </h5>
+    <p class="myp"> Using this app offers you the luxury to simply click a button which trigger your cocktail machine to make a cocktail for you! You are able to choose between a multiple different classic cocktails like a Pina Colada or a Long Island Ice Tea. However, if you are feelings creative, you are also able to customize an existing drink or create a completely new drink using the ingredients available!<p>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('cocktail')}}" role="button">Cocktails</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('manually')}}" role="button">Create Custom Cocktail</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('savedDrinks')}}" role="button">Saved Cocktails</a>
+{% endblock %}
+

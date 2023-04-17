@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Mojito{% endblock %}
+
+
+{% block content %}
+    <h1> Pick Your Cocktail Here! </h1>
+    <p class="myp"> Click one of the buttons down below to learn more about that specific cocktail. Learns about the history of the cocktail, the ingredients used and much more! <p>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('cocktail1')}}" role="button">Mojito</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('cocktail2')}}" role="button">Pina Colada</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('cocktail3')}}" role="button">Long Island Iced Tea</a>
+    <a class="btn btn-primary btn-lg btn-block" href="{{url_for('cocktail4')}}" role="button">Sex On The Beach</a>
+{% endblock %}
+

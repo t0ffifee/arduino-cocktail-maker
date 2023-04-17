@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Mojito{% endblock %}
+
+
+{% block content %}
+    <body>
+    <h1> Mojito </h1>
+    <p> Originally from Havana, Cuba, the mojito is a drink that was originally used for medicinal purposes. With the addition of rum, the drink transformed into the current known Mojito. </p>
+    <p> The drink uses ingredients indigenous to Cuba, including rum, lime, mint, soda and sugar </p>     
+    <form method="post" action="/cocktail1">
+        <input class="btn btn-primary btn-lg" type="submit" value="Make Mojito!" name="sendPOST1"/>
+    </form>
+    </body>
+{% endblock %}

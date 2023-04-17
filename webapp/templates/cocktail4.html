@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Sex on the Beach{% endblock %}
+
+{% block content %}
+<body>
+    <h1> Sex on the Beach </h1>
+    <p> The origin behind the sex on the beach cocktail is varied but the most popular one is attributed to Ted Pizio. He was a Florida bartender in the 1980s. He came up with the cocktail as a way to promote peach schnapps and named it after 'sex' and 'the beach' because according to him that were the two main attractions of spring break. The drink is popular because of its large degree of fruit juices and mild alcohol taste. </p>
+    <p> A sex on the beach contains the following ingredients: vodka, peach schnapps, orange juice and cranberry juice. </p>
+    <form method="post" action="/cocktail4">
+        <input class="btn btn-primary btn-lg" type="submit" value="Make Sex On The Beach!" name="sendPOST4"/>
+    </form>
+</body>    
+{% endblock %}
+

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Saved drinks{% endblock %}
+
+{% block content %}
+    <body>
+    <h1 style="padding-bottom:2%">Saved drinks</h1>
+    {% for value in data.values() %}
+        <h4 class="drink-title"> {{ value['name'] }} </h4>
+        <h6> Ingredients: </h6>
+        <div style="padding-bottom: 4%;">
+            <li class="ingredients"> {{value['1']}}mL RedDragon </li>
+            <li class="ingredients"> {{value['2']}}mL BlueLagoon </li>
+            <li class="ingredients"> {{value['3']}}mL LeafGreen </li>
+            <li class="ingredients"> {{value['4']}}mL PinkLady </li>
+        </div>
+        <div style="padding-bottom: 5%;">
+            <form method="post" action="/savedDrinks">
+            <input class="btn btn-primary btn-lg" type="submit" value="Make" name={{value['name']}} />
+            <input class="btn btn-primary btn-lg" type="submit" value="Delete" name={{value['name']}} />
+            </form>
+        </div>
+        <p> </p>
+    {% endfor %}
+
+    </body>
+{% endblock %}
